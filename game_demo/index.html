@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <!--总的游戏平台-->
+        <!--遮罩层-->
+        <!--这个主要负责游戏开始结束的提示-->
+            <div id="sword"><img  src="images/start.png"></div>
+        <div id="swordfail"><img  src="images/fail.png"><br/><br/><button id="reload">再来一局</button><button id="look">查看分数</button></div>
+            <div id="swordsuc"><img  src="images/success.png"></div>
+            <div id="swordclear"><img  src="images/clear.png"></div>
+            <div id="playpane">
+            <!--这个是游戏区域-->
+                <!--这个div主要负责显示游戏提示以及开始-->
+                <div id="gamestart">
+                    <p>这是游戏提示:</p>
+                    <p>这是一个简单的翻牌小游戏</p>
+                    <p>游戏总共分三局，每一局根据过关速度有相应的得分</p>
+                    <p>这个游戏仅供娱乐，不得用于商业用途</p>
+                    <p>游戏所有素材都是英雄杀官网获取</p>
+                    <p>有兴趣的了解更多可以去QQ游戏下载</p>
+                    <button id="start">开始游戏</button>
+                </div>
+                <!--这个区域主要负责上面的积分-->
+                <!--这个div主要负责游戏图片的加载与进行-->
+                <div id="playstart">
+             <div class="card"><img  id="card1"   src="images/bm.png"/></div>
+             <div class="card"><img  id="card2"   src="images/bm.png"/></div>
+             <div class="card"><img  id="card3"   src="images/bm.png"/></div>
+             <div class="card"><img  id="card4"   src="images/bm.png"/></div>
+             <div class="card"><img  id="card5"   src="images/bm.png"/></div>
+             <div class="card"><img  id="card6"   src="images/bm.png"/></div>
+             <div class="card"><img  id="card7"   src="images/bm.png"/></div>
+             <div class="card"><img  id="card8"   src="images/bm.png"/></div>
+             <div class="card"><img  id="card9"   src="images/bm.png"/></div>
+             <div class="card"><img  id="card10"  src="images/bm.png"/></div>
+             <div class="card"><img  id="card11"  src="images/bm.png"/></div>
+             <div class="card"><img  id="card12"  src="images/bm.png"/></div>
+             <div class="card"><img  id="card13"  src="images/bm.png"/></div>
+             <div class="card"><img  id="card14"  src="images/bm.png"/></div>
+             <div class="card"><img  id="card15"  src="images/bm.png"/></div>
+             <div class="card"><img  id="card16"  src="images/bm.png"/></div>
+             <div class="card"><img  id="card17"  src="images/bm.png"/></div>
+             <div class="card"><img  id="card18"  src="images/bm.png"/></div>
+                </div>
+            </div>
+        <!--记分区域-->
+        <div id="score"><img  src="images/sword.png"><p><b id="round">第一关</b><br/><br/>剩余时间<br/><br/><b id="livetime">0</b></p></div>
+        <!--最终得分-->
+        <div>
+        <div id="firscore"><img src="images/sword.png"><p><b>第一关</b><br/><br/>分数<br/><br/><b id="my_firscore">0</b></p></div>
+        <div id="secscore"><img src="images/sword.png"><p><b>第二关</b><br/><br/>分数<br/><br/><b id="my_secscore">0</b></p></div>
+        <div id="thrscore"><img src="images/sword.png"><p><b>第三关</b><br/><br/>分数<br/><br/><b id="my_thrscore">0</b></p></div>
+        </div>
+        <div><button id="last">再来一局</button></div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
